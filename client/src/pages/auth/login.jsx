@@ -1,6 +1,6 @@
 function AuthLogin() {
     return (
-        <div>
+        <div className="text-3xl">
             login
         </div>
     );
