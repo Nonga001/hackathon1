@@ -1,15 +1,27 @@
 {
   "name": "server",
   "version": "1.0.0",
+<<<<<<< HEAD
   "description": "hack",
+=======
+>>>>>>> db0bd1a (server)
   "main": "server.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "start": "server.js",
+<<<<<<< HEAD
     "dev":"nodemon server.js"
   },
   "author": "JunAmi",
   "license": "ISC",
+=======
+    "dev": "nodemon server.js"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "description": "",
+>>>>>>> db0bd1a (server)
   "dependencies": {
     "bcryptjs": "^2.4.3",
     "cloudinary": "^2.5.0",
