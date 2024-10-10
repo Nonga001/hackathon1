@@ -5,6 +5,7 @@ import { useState } from "react";
 import { useDispatch } from "react-redux";
 import { Link, useNavigate } from "react-router-dom";
 
+
 const initialState = {
     userName: '',
     email: '',
@@ -15,13 +16,15 @@ function AuthRegister() {
     const [formData, setFormData] = useState(initialState);
     const dispatch = useDispatch();
     const navigate = useNavigate();
+    
 
     function onSubmit(event) {
         event.preventDefault();
         dispatch(registerUser(formData)).then((data) => {
-            if(data?.payload?.success) navigate ('/auth/login')
-            console.log(data);
-                                   
+            if(data?.payload?.success){             
+                navigate ('/auth/login')
+            }
+            console.log(data);                                   
         });
     };
 
