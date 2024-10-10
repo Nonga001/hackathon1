@@ -19,8 +19,9 @@ function AuthRegister() {
     function onSubmit(event) {
         event.preventDefault();
         dispatch(registerUser(formData)).then((data) => {
+            if(data?.payload?.success) navigate ('/auth/login')
             console.log(data);
-            navigate('/auth/login');                        
+                                   
         });
     };
 

@@ -27,7 +27,7 @@ const registerUser = async(req,res) => {
         console.log(e);
         res.status(500).json({
             success : false,
-            message : 'Some error occured'
+            message : e.message || 'Some error occured',
         })
     }
 
@@ -36,6 +36,24 @@ const registerUser = async(req,res) => {
 
 
 //Login
+
+const loginUser = async (req , res ) =>{
+
+    const { email , password} = req.body;
+
+    try{
+
+
+
+     }catch(e){
+        console.log(e);
+        res.status(500).json({
+            success : false,
+            message : "Some error occured"
+        });
+    };
+
+}
 
 
 
