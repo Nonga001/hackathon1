@@ -1,14 +1,4 @@
 /** @type {import('tailwindcss').Config} */
-<<<<<<< HEAD
-export default {
-  content: [],
-  theme: {
-    extend: {},
-  },
-  plugins: [],
-}
-
-=======
 module.exports = {
   darkMode: ["class"],
   content: [
@@ -84,4 +74,3 @@ module.exports = {
   },
   plugins: [require("tailwindcss-animate")],
 }
->>>>>>> 8670f38 (1)
