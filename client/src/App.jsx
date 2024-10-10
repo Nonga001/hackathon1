@@ -1,5 +1,6 @@
 import { Routes,Route } from "react-router-dom";
-import AuthLayout from "./components/auth/ layout";
+import AuthLayout from "./components/auth/layout";
+import AdminLayout from "./components/admin-view/layout";
 import AuthLogin from "./pages/auth/login";
 import AuthRegister from "./pages/auth/register";
 
@@ -14,7 +15,6 @@ import ShoppingHome from "./pages/shopping-view/home";
 import ShoppingListing from "./pages/shopping-view/listing";
 import ShoppingCheckout from "./pages/shopping-view/checkout";
 import ShoppingAccount from "./pages/shopping-view/account";
-import { Check } from "lucide-react";
 import CheckAuth from "./components/common/CheckAuth";
 
 function App() {
