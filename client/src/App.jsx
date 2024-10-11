@@ -16,16 +16,15 @@ import ShoppingListing from "./pages/shopping-view/listing";
 import ShoppingCheckout from "./pages/shopping-view/checkout";
 import ShoppingAccount from "./pages/shopping-view/account";
 import CheckAuth from "./components/common/CheckAuth";
-import {Toaster} from "./components/ui/toaster";
+import { useSelector } from "react-redux";
 
 function App() {
 
-    const isAuthenticated = false;
-    const user = null;
+
+    const { user , isAuthenticated} = useSelector ((state) => state.auth);
 
     return (
         <div className="flex flex-col overflow-hidden bg-white">
-          <Toaster />
           <Routes>
             <Route path='/auth' element={
               <CheckAuth isAuthenticated={isAuthenticated} user={user}>
